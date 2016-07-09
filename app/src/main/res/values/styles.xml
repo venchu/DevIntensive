@@ -1,8 +1,8 @@
 <resources>
 
-    <!-- Base application theme. -->
+    <!— Base application theme. —>
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
+        <!— Customize your theme here. —>
         <item name="colorPrimary">@color/color_primary</item>
         <item name="colorPrimaryDark">@color/color_primary_dark</item>
         <item name="colorAccent">@color/color_accent</item>
@@ -14,12 +14,12 @@
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 
-<style name="icon">
-    <item name="android:layout_width">@dimen/size_small_24</item>
-    <item name="android:layout_height">@dimen/size_small_24</item>
-</style>
+    <style name="icon">
+        <item name="android:layout_width">@dimen/size_small_24</item>
+        <item name="android:layout_height">@dimen/size_small_24</item>
+    </style>
 
     <style name="icon.left" parent="icon">
         <item name="android:layout_gravity">top|left</item>
