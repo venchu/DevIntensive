@@ -1,9 +1,10 @@
-package com.softdesign.devintensive.data.messages;
+package com.softdesign.devintensive.data.managers;
 
-import com.softdesign.devintensive.data.messages.network.RestService;
-import com.softdesign.devintensive.data.messages.network.ServiceGenerator;
-import com.softdesign.devintensive.data.messages.network.req.UserLoginReq;
-import com.softdesign.devintensive.data.messages.network.res.UserModelRes;
+import com.softdesign.devintensive.network.interceptors.RestService;
+import com.softdesign.devintensive.network.interceptors.ServiceGenerator;
+import com.softdesign.devintensive.network.interceptors.req.UserLoginReq;
+import com.softdesign.devintensive.network.interceptors.res.UserModelRes;
+import com.softdesign.devintensive.network.interceptors.res.UserListRes;
 
 import retrofit2.Call;
 import okhttp3.RequestBody;
@@ -12,12 +13,12 @@ import okhttp3.ResponseBody;
 
 public class DataManager {
     private static DataManager INSTANCE = null;
-    private PreferencesManager mPreferencesManager;
+    private com.softdesign.devintensive.data.messages.PreferencesManager mPreferencesManager;
     private RestService mRestService;
 
     private DataManager() {
 
-        this.mPreferencesManager = new PreferencesManager();
+        this.mPreferencesManager = new com.softdesign.devintensive.data.messages.PreferencesManager();
         this.mRestService = ServiceGenerator.createService(RestService.class);
     }
 
@@ -26,20 +27,23 @@ public class DataManager {
         return INSTANCE;
     }
 
-    public PreferencesManager getPreferencesManager() {
+    public com.softdesign.devintensive.data.messages.PreferencesManager getPreferencesManager() {
 
         return mPreferencesManager;
     }
 //region ================ Network ===============
 
-    public Call<UserModelRes> loginUser(UserLoginReq userLoginReq){
+    public Call<UserModelRes> loginUser(UserLoginReq userLoginReq) {
         return mRestService.loginUser(userLoginReq);
     }
-    public Call<ResponseBody> savePhoto(RequestBody body, MultipartBody.Part file){
-        return mRestService.savePhoto(body, file);
+
+    public Call<ResponseBody> uploadUserPhoto(RequestBody body, MultipartBody.Part file) {
+        return null;
     }
 
-
-//endregion
+    public Call<UserListRes> getUserList() {
+        return mRestService.getUserList();
+    }
 
 }
+//endregion

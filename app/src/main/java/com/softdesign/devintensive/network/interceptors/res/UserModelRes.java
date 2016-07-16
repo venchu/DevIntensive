@@ -1,4 +1,4 @@
-package com.softdesign.devintensive.data.messages.network.res;
+package com.softdesign.devintensive.network.interceptors.res;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

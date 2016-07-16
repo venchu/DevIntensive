@@ -1,6 +1,6 @@
-package com.softdesign.devintensive.data.messages.network;
+package com.softdesign.devintensive.network.interceptors;
 
-import com.softdesign.devintensive.data.messages.network.interceptors.HeaderInterceptor;
+import com.softdesign.devintensive.network.interceptors.HeaderInterceptor;
 import com.softdesign.devintensive.utils.AppConfig;
 
 import okhttp3.OkHttpClient;

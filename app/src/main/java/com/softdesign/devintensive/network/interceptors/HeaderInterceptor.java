@@ -1,4 +1,4 @@
-package com.softdesign.devintensive.data.messages.network.interceptors;
+package com.softdesign.devintensive.network.interceptors;
 
 import com.softdesign.devintensive.data.messages.DataManager;
 import com.softdesign.devintensive.data.messages.PreferencesManager;
