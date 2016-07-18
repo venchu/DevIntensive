@@ -7,8 +7,8 @@
     <string name="hint_vk">Профиль в vk</string>
     <string name="hint_about">О себе</string>
     <string name="hint_password">Пароль</string>
-    <string name="text_phone">+7 777 777-77-77</string>
-    <string name="text_email">pochta@pochta.ru</string>
+    <string name="text_phone">+7 909 215-84-11</string>
+    <string name="text_email">me@venchu.com</string>
     <string name="text_github">github.com/venchu</string>
     <string name="text_vk">vk.com/okayanni</string>
     <string name="text_about">Небольшой текст о себе, который должен здесь быть.</string>
@@ -25,4 +25,6 @@
     <string name="error_format_path_github">Неизвестный формат. Необходимо: github.com/xxxxx</string>
     <string name="login">Войти</string>
     <string name="forget_password">Забыли пароль?</string>
+    <string name="ff_medium">sans-serif-medium</string>
+    <string name="ff_regular">sans-serif-regular</string>
 </resources>

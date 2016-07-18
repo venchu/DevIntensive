@@ -14,8 +14,10 @@
     <dimen name="h_line">72dp</dimen>
     <dimen name="left_m_margin_24">24dp</dimen>
     <dimen name="right_m_margin_24">24dp</dimen>
+    <dimen name="right_l_margin_72">72dp</dimen>
     <dimen name="left_m_margin_32">32dp</dimen>
     <dimen name="left_l_margin_72">72dp</dimen>
+
 
     <!— Spaces —>
     <dimen name="spacing_small_8">8dp</dimen>
@@ -29,5 +31,11 @@
     <dimen name="profile_image_size">256dp</dimen>
     <dimen name="fab_right_space">8dp</dimen>
     <dimen name="placeholder_photo_size_90">90dp</dimen>
-</resources>
+    <dimen name="user_size">112dp</dimen>
 
+    <!— Fonts —>
+
+    <dimen name="font_medium_20">20sp</dimen>
+    <dimen name="font_large_24">24sp</dimen>
+    <dimen name="font_small_14">14sp</dimen>
+</resources>
