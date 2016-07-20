@@ -121,7 +121,6 @@ public class RepositoryDao extends AbstractDao<Repository, Long> {
                 cursor.isNull(offset + 2) ? null : cursor.getString(offset + 2), // repositoryName
                 cursor.isNull(offset + 3) ? null : cursor.getString(offset + 3) // userRemoteId
         );
-        22:50:53
         return entity;
     }
 
