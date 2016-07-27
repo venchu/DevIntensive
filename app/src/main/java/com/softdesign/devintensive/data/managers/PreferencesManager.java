@@ -121,7 +121,6 @@ public class PreferencesManager {
 
     public Uri loadUserPhoto(){
         return
-                07:04:18
         Uri.parse(mSharedPreferences.getString(ConstantManager.USER_PHOTO_KEY, "android.resource://com.softdesign.devintensive/drawable/userphoto"));
     }
 
@@ -143,5 +142,9 @@ public class PreferencesManager {
 
     public String getUserId(){
         return mSharedPreferences.getString(ConstantManager.USER_ID_KEY, "null");
+    }
+
+    public String getEmail(){
+        return mSharedPreferences.getString(ConstantManager.CONTENT_EMAIL_VALUES, "null");
     }
 }
